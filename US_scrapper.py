@@ -64,6 +64,8 @@ def scrapper():
                         mongo_docs.append(doc_body)
                         result = col.insert_many(mongo_docs)
 
+            except:
+                pass
 # ## feature extraction
 
 # In[70]:

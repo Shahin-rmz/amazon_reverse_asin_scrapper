@@ -91,7 +91,7 @@ with open('SELECT YOUR FILE HERE') as f:
     for line in f.readlines():
         try:
             number += 1
-            s = Service('/home/shahin/Downloads/chromedriver')
+            s = Service('LOCATE YOUR CHROM DRIVER HERE')
             driver = webdriver.Chrome(service=s,options = chrome_options)
             driver.get("https://amazon.de")
             #cookies
