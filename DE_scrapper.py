@@ -16,19 +16,16 @@ from pymongo import MongoClient
 
 
 # In[29]:
-number = 2935
+# initializing Mongo DB 
+number = 0 
 
 mongo_client = MongoClient()
 db = mongo_client.Amazon_de
 col = db.produkten
 
 
-# # Original
 
-# ad, first raw: B07DLGZH28
-# second in search results B07WH8BJSR, B08PSKLDDQ, B07BPC6F3C, B013IJLUQ2
 
-# ## copy
 
 # In[81]:
 
@@ -89,8 +86,8 @@ def feature_extraction():
 
 # In[ ]:
 
-
-with open('DE_2.txt') as f:
+# iterating through the csv file which has the ASIN codes 
+with open('SELECT YOUR FILE HERE') as f:
     for line in f.readlines():
         try:
             number += 1
